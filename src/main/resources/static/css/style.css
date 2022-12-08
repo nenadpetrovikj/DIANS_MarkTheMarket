@@ -1,0 +1,330 @@
+.page-mask {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+body {
+    font-family: 'Actor', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.welcomePart {
+    width: 100%;
+    /*background-image: url("../image/bg1_3.jpg");*/
+    background: #013220;
+    /*background-image: linear-gradient(#013220, whitesmoke);*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 750px;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 900px;
+    margin-left: 100px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    font-size: 80px;
+    text-align: left;
+    margin-bottom: 50px;
+}
+.searchBarAndSearchIcon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    margin-bottom: 250px;
+}
+.searchBar {
+    width: 700px;
+    height: 50px;
+    border-radius: 20px;
+    background: transparent;
+    padding: 6px 5px 4px 5px;
+    border: 2px whitesmoke solid;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.separate{
+    text-align: center;
+    display: flex;
+    padding: 0 2px;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+    text-decoration: none;
+    width: 148px;
+    height: 48px;
+    border-right: 1px whitesmoke solid;
+}
+.separate:hover {
+    padding-bottom: 150px;
+    cursor: pointer;
+    border-right: none;
+    padding-right: 0;
+    color: black;
+    transition: 0.25s;
+    font-weight: bold;
+}
+.separate:hover div {
+    background: whitesmoke;
+    width: 100%;
+    height: 100%;
+    color: #013220 ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.separate ul{
+    position: absolute;
+    display: none;
+    padding: 0;
+    background: whitesmoke;
+}
+.separate:hover ul{
+    margin-top: 385px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px;
+    padding: 5px 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.separate:nth-of-type(2):hover ul{
+    margin-top: 285px;
+    height: 200px;
+}
+.separate:nth-of-type(4):hover ul{
+    margin-top: 185px;
+    height: 100px;
+}
+.separate:nth-of-type(5):hover ul{
+    margin-top: 265px;
+    height: 180px;
+}
+.option{
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #013220 ;
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    border-bottom: 1px solid lightgrey;
+}
+.option:hover {
+    border: 1px solid gray;
+    background: #013220;
+    color: whitesmoke;
+    border-radius: 5px;
+    transition: 0.25s;
+}
+.right {
+    border-radius: 0 15px 13px 0 ;
+    border-right: none;
+}
+.left {
+    border-radius: 13px 0 0 13px;
+}
+
+#searchButton {
+    display: block;
+    padding: 13px;
+    text-align: center;
+    border: 2px solid whitesmoke;
+    border-radius: 15px;
+    color: whitesmoke;
+}
+#searchButton:hover {
+    color: #013220 ;
+    background: whitesmoke;
+    transition: 0.5s;
+    box-shadow: 3px 3px 3px dimgray;
+}
+
+.imgWrapper {
+    background: url("../image/aisle2_1.jpg") no-repeat;
+    background-size: cover;
+    border-left: 1px solid whitesmoke;
+    height: 750px;
+    width: 750px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro {
+    margin: 0 100px;
+    color: whitesmoke;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 22px;
+}
+.intro h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+}
+/*.intro {*/
+/*    margin: 20px 160px;*/
+/*    color: black;*/
+/*    background: white;*/
+/*    border-radius: 25px;*/
+/*    padding: 20px 10px;*/
+/*}*/
+
+.resultSection {
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+}
+.generatedResult {
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+}
+.row {
+    color: black;
+    text-transform: capitalize;
+    width: 1000px;
+    font-size: 12px;
+    padding: 5px;
+    border-bottom: 1px lightgray solid;
+    display: flex;
+    flex-direction: row;
+}
+.row:hover {
+    transition: 0.2s;
+    background: #355e3b   ;
+    color: whitesmoke;
+    padding: 10px 5px;
+    font-size: 14px;
+}
+.row:first-of-type {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.separateResult {
+    display: flex;
+    padding: 10px 2px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 220px;
+}
+.lastInRow {
+    border: none;
+}
+.button {
+    width: 60px;
+    border: none;
+}
+.tableButton {
+    border: none;
+    padding: 0;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+.tableButton:hover {
+    font-size: 30px;
+    transition: 0.25s;
+}
+
+#dialog1, #dialog2 {
+    background: whitesmoke;
+    color: black;
+    padding: 50px 15px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 1px solid black;
+}
+#dialog1 label, #dialog2 label {
+    width: 300px;
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0;
+}
+.dialogTitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.ui-dialog-buttonset {
+    text-align: center;
+}
+button.ui-button {
+    color: black;
+    background: whitesmoke;
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+}
+button.ui-button:hover {
+    font-size: 24px;
+    font-weight: bold;
+    border: 1px solid whitesmoke;
+    transition: 0.25s;
+    box-shadow: 3px 3px 3px dimgray;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: white 2px solid;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    padding: 0.5vw 1.2vw 0.8vw;
+    border-radius: 10px;
+    font-size: 1.5vw;
+}
+#myBtn:hover {
+    background: whitesmoke;
+    color: black;
+    transition: 0.5s;
+    box-shadow: 3px 3px 3px dimgray;
+}

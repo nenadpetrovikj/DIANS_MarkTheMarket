@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="../static/jquery/jquery.js"></script>
+    <script src="../static/jquery/jquery-ui.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+    <script src="../static/javascript/script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+
+</head>
+<body>
+<div id="page-mask"></div>
+<div class="welcomePart">
+    <div class="wrapper">
+        <h1 class="logo">MarkTheMarket</h1>
+        <div class="searchBarAndSearchIcon">
+            <ul class="searchBar">
+                <li class="separate left"><div class="left">Market Name</div>
+                    <ul>
+                        <li class="option">Tinex</li>
+                        <li class="option">Stokomak</li>
+                        <li class="option">KAM</li>
+                        <li class="option">Reptil</li>
+                        <li class="option">Kiper</li>
+                        <li class="option">Gigo</li>
+                        <li class="option">Vero</li>
+                        <li class="option">Ramstore</li>
+                    </ul>
+                </li>
+                <li class="separate"><div>Market Type</div>
+                    <ul>
+                        <li class="option">Hyper Market</li>
+                        <li class="option">Super Market</li>
+                        <li class="option">Discount Market</li>
+                        <li class="option">Green Market</li>
+                        <li class="option">Convenience Store</li>
+                    </ul>
+                </li>
+                <li class="separate"><div>Location</div>
+                    <ul>
+                        <li class="option">Aerodrom</li>
+                        <li class="option">Karpos</li>
+                        <li class="option">Centar</li>
+                        <li class="option">Butel</li>
+                        <li class="option">Radisani</li>
+                        <li class="option">Kisela Voda</li>
+                        <li class="option">Gazi Baba</li>
+                    </ul>
+                </li>
+                <li class="separate"><div>Working Hours</div>
+                    <ul>
+                        <li class="option">8-4</li>
+                        <li class="option">9-5</li>
+                        <li class="option">00-24</li>
+                    </ul>
+                </li>
+                <li class="separate right"><div class="right">Rating</div>
+                    <ul>
+                        <li class="option">1 stars</li>
+                        <li class="option">2 stars</li>
+                        <li class="option">3 stars</li>
+                        <li class="option">4 stars</li>
+                        <li class="option">5 stars</li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="searchIcon">
+                <a href="#result" id="searchButton"><i style="font-size:30px" class="fa">&#xf002;</i></a>
+            </div>
+        </div>
+    </div>
+    <div class="imgWrapper">
+                 <!--<i class="material-icons">&#xe8d1;</i>-->
+        <div class="intro">
+            <h2>Mark your market...</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda distinctio eaque eius eveniet hic magni nulla numquam obcaecati officiis, optio quo rerum similique sit sunt, suscipit tempora tenetur, voluptas.
+        </div>
+    </div>
+</div>
+
+<div class="resultSection">
+    <div class="generatedResult">
+        <a id="result"></a>
+        <div class="row">
+            <div class="separateResult inRow">Market Name</div>
+            <div class="separateResult inRow">Market Type</div>
+            <div class="separateResult inRow">Market Address</div>
+            <div class="separateResult inRow lastInRow">Municipality</div>
+            <div class="separateResult button"></div>
+            <div class="separateResult button">Information</div>
+            <div class="separateResult button"></div>
+        </div>
+        <div class="row">
+            <div class="separateResult inRow">Tinex</div>
+            <div class="separateResult inRow">Hypermarket</div>
+            <div class="separateResult inRow">ul. Nikola Parapunov br.3-83</div>
+            <div class="separateResult inRow lastInRow">Aerodrom</div>
+            <div class="separateResult button">
+                <button class="tableButton"><i class="material-icons" style="font-size: 30px">&#xe0c8;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" id="hoursButton"><i class="fa">&#xf1da;</i></button>
+                <div id="dialog1">
+                    <div class="dialogTitle">Working hours:</div>
+                    <label>Monday:<br> <span>08:00h - 16:00h</span></label>
+                </div>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" id="infoButton"><i class="fa">&#xf05a;</i></button>
+                <div id="dialog2">
+                    <div class="dialogTitle">Additional info:</div>
+                    <label>website:<br> <span>www.website.com.mk</span></label>
+                    <label>number:<br> <span>078555555</span></label>
+                    <label>rating:<br> <span>5 star</span></label>
+                    <label>reviews:<br> <span>80</span><br></label>
+                </div>
+            </div>
+        </div>
+
+        <!-- placeholders -->
+        <div class="row">
+            <div class="separateResult inRow">Tinex</div>
+            <div class="separateResult inRow">Hypermarket</div>
+            <div class="separateResult inRow">ul. Nikola Parapunov br.3-83</div>
+            <div class="separateResult inRow lastInRow">Aerodrom</div>
+            <div class="separateResult button">
+                <button class="tableButton"><i class="material-icons" style="font-size: 30px">&#xe0c8;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="hoursButton"><i style="font-size:24px" class="fa">&#xf1da;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="infoButton"><i style="font-size:24px" class="fa">&#xf05a;</i></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="separateResult inRow">Tinex</div>
+            <div class="separateResult inRow">Hypermarket</div>
+            <div class="separateResult inRow">ul. Nikola Parapunov br.3-83</div>
+            <div class="separateResult inRow lastInRow">Aerodrom</div>
+            <div class="separateResult button">
+                <button class="tableButton"><i class="material-icons" style="font-size: 30px">&#xe0c8;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="hoursButton"><i style="font-size:24px" class="fa">&#xf1da;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="infoButton"><i style="font-size:24px" class="fa">&#xf05a;</i></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="separateResult inRow">Tinex</div>
+            <div class="separateResult inRow">Hypermarket</div>
+            <div class="separateResult inRow">ul. Nikola Parapunov br.3-83</div>
+            <div class="separateResult inRow lastInRow">Aerodrom</div>
+            <div class="separateResult button">
+                <button class="tableButton"><i class="material-icons" style="font-size: 30px">&#xe0c8;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="hoursButton"><i style="font-size:24px" class="fa">&#xf1da;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="infoButton"><i style="font-size:24px" class="fa">&#xf05a;</i></button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="separateResult inRow">Tinex</div>
+            <div class="separateResult inRow">Hypermarket</div>
+            <div class="separateResult inRow">ul. Nikola Parapunov br.3-83</div>
+            <div class="separateResult inRow lastInRow">Aerodrom</div>
+            <div class="separateResult button">
+                <button class="tableButton"><i class="material-icons" style="font-size: 30px">&#xe0c8;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="hoursButton"><i style="font-size:24px" class="fa">&#xf1da;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="infoButton"><i style="font-size:24px" class="fa">&#xf05a;</i></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="separateResult inRow">Tinex</div>
+            <div class="separateResult inRow">Hypermarket</div>
+            <div class="separateResult inRow">ul. Nikola Parapunov br.3-83</div>
+            <div class="separateResult inRow lastInRow">Aerodrom</div>
+            <div class="separateResult button">
+                <button class="tableButton"><i class="material-icons" style="font-size: 30px">&#xe0c8;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="hoursButton"><i style="font-size:24px" class="fa">&#xf1da;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="infoButton"><i style="font-size:24px" class="fa">&#xf05a;</i></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="separateResult inRow">Tinex</div>
+            <div class="separateResult inRow">Hypermarket</div>
+            <div class="separateResult inRow">ul. Nikola Parapunov br.3-83</div>
+            <div class="separateResult inRow lastInRow">Aerodrom</div>
+            <div class="separateResult button">
+                <button class="tableButton"><i class="material-icons" style="font-size: 30px">&#xe0c8;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="hoursButton"><i style="font-size:24px" class="fa">&#xf1da;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="infoButton"><i style="font-size:24px" class="fa">&#xf05a;</i></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="separateResult inRow">Tinex</div>
+            <div class="separateResult inRow">Hypermarket</div>
+            <div class="separateResult inRow">ul. Nikola Parapunov br.3-83</div>
+            <div class="separateResult inRow lastInRow">Aerodrom</div>
+            <div class="separateResult button">
+                <button class="tableButton"><i class="material-icons" style="font-size: 30px">&#xe0c8;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="hoursButton"><i style="font-size:24px" class="fa">&#xf1da;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="infoButton"><i style="font-size:24px" class="fa">&#xf05a;</i></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="separateResult inRow">Tinex</div>
+            <div class="separateResult inRow">Hypermarket</div>
+            <div class="separateResult inRow">ul. Nikola Parapunov br.3-83</div>
+            <div class="separateResult inRow lastInRow">Aerodrom</div>
+            <div class="separateResult button">
+                <button class="tableButton"><i class="material-icons" style="font-size: 30px">&#xe0c8;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="hoursButton"><i style="font-size:24px" class="fa">&#xf1da;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="infoButton"><i style="font-size:24px" class="fa">&#xf05a;</i></button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="separateResult inRow">Tinex</div>
+            <div class="separateResult inRow">Hypermarket</div>
+            <div class="separateResult inRow">ul. Nikola Parapunov br.3-83</div>
+            <div class="separateResult inRow lastInRow">Aerodrom</div>
+            <div class="separateResult button">
+                <button class="tableButton"><i class="material-icons" style="font-size: 30px">&#xe0c8;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="hoursButton"><i style="font-size:24px" class="fa">&#xf1da;</i></button>
+            </div>
+            <div class="separateResult button">
+                <button class="tableButton" class="infoButton"><i style="font-size:24px" class="fa">&#xf05a;</i></button>
+            </div>
+        </div>
+    </div>
+</div>
+<button id="myBtn" title="Go to top">↑</button>
+</body>
+</html>
