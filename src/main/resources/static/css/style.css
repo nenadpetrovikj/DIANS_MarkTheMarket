@@ -20,7 +20,7 @@ body {
     width: 100%;
     /*background-image: url("../image/bg1_3.jpg");*/
     background: #013220;
-    /*background-image: linear-gradient(#013220, whitesmoke);*/
+    background-image: linear-gradient(#013220, black);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,6 +28,7 @@ body {
     height: 750px;
     margin: 0;
     padding: 0;
+    border-bottom: 2px solid whitesmoke;
 }
 .wrapper {
     width: 900px;
@@ -54,7 +55,8 @@ body {
     width: 700px;
     height: 50px;
     border-radius: 20px;
-    background: transparent;
+    /*background: transparent;*/
+    background: whitesmoke;
     padding: 6px 5px 4px 5px;
     border: 2px whitesmoke solid;
     display: flex;
@@ -69,11 +71,13 @@ body {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    color: whitesmoke;
+    /*color: whitesmoke;*/
+    color: #013220;
     text-decoration: none;
     width: 148px;
     height: 48px;
-    border-right: 1px whitesmoke solid;
+    border-right: 1px #013220 solid;
+    font-weight: bold;
 }
 .separate:hover {
     padding-bottom: 150px;
@@ -85,10 +89,10 @@ body {
     font-weight: bold;
 }
 .separate:hover div {
-    background: whitesmoke;
+    background: #013220;
     width: 100%;
     height: 100%;
-    color: #013220 ;
+    color: whitesmoke ;
     text-align: center;
     display: flex;
     align-items: center;
@@ -157,11 +161,12 @@ body {
     text-align: center;
     border: 2px solid whitesmoke;
     border-radius: 15px;
-    color: whitesmoke;
+    color: #013220;
+    background: whitesmoke;
 }
 #searchButton:hover {
-    color: #013220 ;
-    background: whitesmoke;
+    color: whitesmoke ;
+    background: #013220;
     transition: 0.5s;
     box-shadow: 3px 3px 3px dimgray;
 }
@@ -199,6 +204,21 @@ body {
 /*    padding: 20px 10px;*/
 /*}*/
 
+.separator{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    background: whitesmoke;
+    color: #013220;
+}
+.separator.background div{
+    padding: 25px 75px;
+    text-align: center;
+}
+
 .resultSection {
     background: lightgray;
     display: flex;
@@ -213,7 +233,7 @@ body {
     border-radius: 5px;
 }
 .row {
-    color: black;
+    color: #013220;
     text-transform: capitalize;
     width: 1000px;
     font-size: 12px;
@@ -222,12 +242,16 @@ body {
     display: flex;
     flex-direction: row;
 }
-.row:hover {
+.row:not(.row:first-of-type):hover {
     transition: 0.2s;
-    background: #355e3b   ;
+    background: #013220;
     color: whitesmoke;
     padding: 10px 5px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.row:hover .tableButton {
+    color: whitesmoke;
 }
 .row:first-of-type {
     font-weight: bold;
@@ -255,6 +279,7 @@ body {
     background: none;
     font-size: 24px;
     cursor: pointer;
+    color: #013220;
 }
 .tableButton:hover {
     font-size: 30px;
@@ -262,8 +287,8 @@ body {
 }
 
 #dialog1, #dialog2 {
-    background: whitesmoke;
-    color: black;
+    background-image: linear-gradient(#013220, black);
+    color: whitesmoke;
     padding: 50px 15px;
     border-radius: 10px;
     text-align: center;
@@ -272,7 +297,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    border: 1px solid black;
+    border: 1px solid whitesmoke;
 }
 #dialog1 label, #dialog2 label {
     width: 300px;
@@ -289,20 +314,23 @@ body {
     text-align: center;
 }
 button.ui-button {
-    color: black;
-    background: whitesmoke;
+    color: whitesmoke;
+    background-image: linear-gradient(#013220, black);
     margin: 10px auto;
+    border: 1px solid whitesmoke;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
-    border: none;
 }
 button.ui-button:hover {
+    cursor: pointer;
     font-size: 24px;
     font-weight: bold;
-    border: 1px solid whitesmoke;
+    border: 1px solid #013220;
+    color: #013220;
+    background: whitesmoke;
     transition: 0.25s;
     box-shadow: 3px 3px 3px dimgray;
 }
@@ -323,8 +351,7 @@ button.ui-button:hover {
     font-size: 1.5vw;
 }
 #myBtn:hover {
-    background: whitesmoke;
-    color: black;
+    background: #013220;
     transition: 0.5s;
     box-shadow: 3px 3px 3px dimgray;
 }
