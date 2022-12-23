@@ -54,7 +54,6 @@ body {
 .searchBar {
     width: 700px;
     height: 50px;
-    /*border-radius: 20px;*/
     border-radius: 360px;
     /*background: transparent;*/
     background: whitesmoke;
@@ -63,79 +62,110 @@ body {
     display: flex;
     flex-direction: row;
     margin-right: 10px;
+    list-style-type: none;
 }
 
-.separate{
-    text-align: center;
-    display: flex;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    /*color: whitesmoke;*/
-    color: #013220;
-    text-decoration: none;
-    width: 148px;
+/*.separate{*/
+/*    text-align: center;*/
+/*    display: flex;*/
+/*    padding: 0;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    text-transform: uppercase;*/
+/*    !*color: whitesmoke;*!*/
+/*    color: #013220;*/
+/*    text-decoration: none;*/
+/*    width: 148px;*/
+/*    height: 48px;*/
+/*    border-right: 1px #013220 solid;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.separate:hover {*/
+/*    padding-bottom: 150px;*/
+/*    cursor: pointer;*/
+/*    border-right: none;*/
+/*    padding-right: 0;*/
+/*    color: black;*/
+/*    transition: 0.25s;*/
+/*    font-weight: bold;*/
+/*}*/
+/*.separate:hover div {*/
+/*    background: #013220;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    color: whitesmoke ;*/
+/*    text-align: center;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*}*/
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+}
+select {
+    outline: none;
+    appearance: none;
+    width: 175px;
     height: 48px;
+    text-align: center;
+    border: none;
     border-right: 1px #013220 solid;
     font-weight: bold;
+    color: #013220;
+    background: whitesmoke;
+    text-transform: uppercase;
 }
-.separate:hover {
-    padding-bottom: 150px;
+
+select:hover {
+    background: #013220;
     cursor: pointer;
     border-right: none;
     padding-right: 0;
-    color: black;
+    color: whitesmoke;
     transition: 0.25s;
-    font-weight: bold;
 }
-.separate:hover div {
-    background: #013220;
-    width: 100%;
-    height: 100%;
-    color: whitesmoke ;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.separate ul{
-    position: absolute;
-    display: none;
-    padding: 0;
-    background: whitesmoke;
-}
-.separate:hover ul{
-    margin-top: 385px;
-    cursor: pointer;
-    border-radius: 5px;
-    width: 200px;
-    padding: 5px 10px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-.separate:nth-of-type(2):hover ul{
-    margin-top: 285px;
-    height: 200px;
-}
-.separate:nth-of-type(4):hover ul{
-    margin-top: 185px;
-    height: 100px;
-}
-.separate:nth-of-type(5):hover ul{
-    margin-top: 265px;
-    height: 180px;
-}
+
+/*.separate ul{*/
+/*    position: absolute;*/
+/*    display: none;*/
+/*    padding: 0;*/
+/*    background: whitesmoke;*/
+/*}
+/*.separate:hover ul{*/
+/*    margin-top: 385px;*/
+/*    cursor: pointer;*/
+/*    border-radius: 5px;*/
+/*    width: 200px;*/
+/*    padding: 5px 10px;*/
+/*    height: 300px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: space-around;*/
+/*    align-items: center;*/
+/*}
+/*.separate:nth-of-type(2):hover ul{*/
+/*    margin-top: 285px;*/
+/*    height: 200px;*/
+/*}
+/*.separate:nth-of-type(4):hover ul{*/
+/*    margin-top: 185px;*/
+/*    height: 100px;*/
+/*}
+/*.separate:nth-of-type(5):hover ul{*/
+/*    margin-top: 265px;*/
+/*    height: 180px;*/
+/*}*/
+
 .option{
-    width: 100%;
+    background: whitesmoke;
+    color: #013220;
     position: relative;
-    margin: 0;
     padding: 10px 0;
     text-decoration: none;
-    color: #013220 ;
     display: block;
     font-weight: bold;
     font-size: 12px;
@@ -148,6 +178,7 @@ body {
     border-radius: 5px;
     transition: 0.25s;
 }
+
 .right {
     border-radius: 0 90px 90px 0 ;
     border-right: none;
@@ -171,6 +202,17 @@ body {
     background: #013220;
     transition: 0.5s;
     box-shadow: 3px 3px 3px dimgray;
+}
+.selectedItems {
+    width: 700px;
+    height: 50px;
+    border-radius: 360px;
+    background: whitesmoke;
+    padding: 6px 5px 4px 5px;
+    border: 2px whitesmoke solid;
+    display: flex;
+    flex-direction: row;
+    margin-left: -55px;
 }
 
 .imgWrapper {
