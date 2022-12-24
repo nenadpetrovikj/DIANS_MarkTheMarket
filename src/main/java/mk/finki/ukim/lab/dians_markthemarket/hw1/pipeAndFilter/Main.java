@@ -14,10 +14,10 @@ public class Main {
         Pipe<String> pipe = addFiltersToPipe();
         AppropriateValues.initAppropriateMarkets();
 
-        Scanner scanner = new Scanner(new File("hw1/csv/MarketiStartingTable.csv"));
+        Scanner scanner = new Scanner(new File("src/main/java/mk/finki/ukim/lab/dians_markthemarket/hw1/csv/MarketiStartingTable.csv"));
 
         try {
-            CSVWriter writer = new CSVWriter(new FileWriter("hw1/csv/MarketiTableFinal.csv"));
+            CSVWriter writer = new CSVWriter(new FileWriter("src/main/java/mk/finki/ukim/lab/dians_markthemarket/hw1/csv/MarketiTableFinal.csv"));
             while (scanner.hasNextLine()) {
                 String[] line = pipe.runFilter(scanner.nextLine()).split("\n");
                 if (line.length == 10)
