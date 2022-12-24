@@ -12,26 +12,26 @@ public class Market {
     private Long id;
 
     private String name;
+    private String website;
     private String type;
+    private String number;
+    private String address;
     private String municipality;
     private String rating;
-    private String address;
-    private String hours;
-    private String website;
-    private String number;
     private String reviews;
+    private String hours;
     private String locationLink;
 
-    public Market(String name, String type, String municipality, String rating, String address, String hours, String website, String number, String reviews, String locationLink) {
+    public Market(String name, String website, String type, String number, String address, String municipality, String rating, String reviews, String hours, String locationLink) {
         this.name = name;
+        this.website = website;
         this.type = type;
+        this.number = number;
+        this.address = address;
         this.municipality = municipality;
         this.rating = rating;
-        this.address = address;
-        this.hours = hours;
-        this.website = website;
-        this.number = number;
         this.reviews = reviews;
+        this.hours = hours;
         this.locationLink = locationLink;
     }
 
