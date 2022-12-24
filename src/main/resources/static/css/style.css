@@ -330,7 +330,7 @@ select:hover {
     transition: 0.25s;
 }
 
-#dialog1, #dialog2 {
+.dialog1, .dialog2 {
     /*background-image: linear-gradient(#013220, black);*/
     background: whitesmoke;
     /*color: whitesmoke;*/
@@ -345,7 +345,7 @@ select:hover {
     font-size: 20px;
     border: 1px solid whitesmoke;
 }
-#dialog1 label, #dialog2 label {
+.dialog1 label, .dialog2 label {
     width: 300px;
     border-bottom: 1px solid lightgray;
     padding: 10px 0;

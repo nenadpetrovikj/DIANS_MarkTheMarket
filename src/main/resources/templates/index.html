@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -97,13 +97,14 @@
                     </select>
                 </li>
             </ul>
-            <div class="searchIcon">
-                <a href="#result" id="searchButton"><i style="font-size:24px" class="fa">&#xf002;</i></a>
-            </div>
+<!--            <form action="/markTheMarket/findAllMarkets" method="post">-->
+                <div class="searchIcon">
+                    <button id="searchButton"><i style="font-size:24px" class="fa">&#xf002;</i></button>
+                </div>
+<!--            </form>-->
         </div>
     </div>
     <div class="imgWrapper">
-                 <!--<i class="material-icons">&#xe8d1;</i>-->
         <div class="intro">
             <h2>Mark your market...</h2>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda distinctio eaque eius eveniet hic magni nulla numquam obcaecati officiis, optio quo rerum similique sit sunt, suscipit tempora tenetur, voluptas.
@@ -138,8 +139,8 @@
             <div class="separateResult button">Information</div>
             <div class="separateResult button"></div>
         </div>
-        <div class="row">
-            <div class="separateResult inRow">Tinex</div>
+        <div class="row">   <!--th:each="market : ${markets}"-->
+            <div class="separateResult inRow">Tinex</div> <!--th:text="${market.getName()}"-->
             <div class="separateResult inRow">Hypermarket</div>
             <div class="separateResult inRow">ul. Nikola Parapunov br.3-83</div>
             <div class="separateResult inRow lastInRow">Aerodrom</div>
