@@ -65,16 +65,17 @@ public class MarketServiceImpl implements MarketService {
             Integer intRating = Integer.parseInt(rating), marketRating = 0;
             String finalRating = "";
             for (int i = 0; i < marketsResultList.size(); i++) {
-                if (marketsResultList.get(i).getRating().contains(".")) {
-                    finalRating = marketsResultList.get(i).getRating().split("\\.")[0];
-                    marketRating = Integer.parseInt(finalRating);
-                } else if (!marketsResultList.get(i).getRating().equals("")) {
-                    marketRating = Integer.parseInt(marketsResultList.get(i).getRating());
-                } else
-                    marketsResultList.remove(marketsResultList.get(i--));
-
-                if (!marketRating.equals(intRating))
-                    marketsResultList.remove(marketsResultList.get(i--));
+                if(!marketsResultList.get(i).getRating().equals("")) {
+                    if (marketsResultList.get(i).getRating().contains(".")) {
+                        finalRating = marketsResultList.get(i).getRating().split("\\.")[0];
+                        marketRating = Integer.parseInt(finalRating);
+                    } else {
+                        marketRating = Integer.parseInt(marketsResultList.get(i).getRating());
+                    }
+                    if (!marketRating.equals(intRating))
+                        marketsResultList.remove(marketsResultList.get(i--));
+                }
+                else marketsResultList.remove(marketsResultList.get(i--));
             }
         }
         return marketsResultList;
