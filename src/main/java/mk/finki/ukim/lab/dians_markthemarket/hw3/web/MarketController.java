@@ -24,8 +24,9 @@ public class MarketController {
     }
 
     @GetMapping
-    public String getMarketPage() throws FileNotFoundException {
+    public String getMarketPage(Model model) throws FileNotFoundException {
         markTheMarketInitDatabaseService.createFinal();
+        model.addAttribute("filteredMarkets", marketService.findAllMarkets());
         return "index";
     }
 
