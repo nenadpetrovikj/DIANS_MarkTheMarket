@@ -14,3 +14,4 @@ public interface MarketRepository extends JpaRepository<Market, Long> {
 
     List<Market> findAllByNameAndTypeAndMunicipalityLike(String name, String type, String municipality);
 }
+//dummy comment git
