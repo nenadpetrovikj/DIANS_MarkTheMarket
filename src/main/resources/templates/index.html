@@ -18,96 +18,105 @@
     <div class="wrapper">
         <h1 class="logo">MarkTheMarket</h1>
         <div class="searchBarAndSearchIcon">
-            <ul class="searchBar">
-                <li class="separate left">
-                    <select class="left">
-                        <option class="option" style="padding: 30px">Market Name</option>
-                        <option class="option">tinex</option>
-                        <option class="option">old bazaar</option>
-                        <option class="option">farmers</option>
-                        <option class="option">gama market</option>
-                        <option class="option">zur</option>
-                        <option class="option">kipper</option>
-                        <option class="option">kam</option>
-                        <option class="option">nova market</option>
-                        <option class="option">fresh</option>
-                        <option class="option">my market</option>
-                        <option class="option">camerons market of goods</option>
-                        <option class="option">mel market</option>
-                        <option class="option">damjance prom market</option>
-                        <option class="option">dragstor beti</option>
-                        <option class="option">marvik</option>
-                        <option class="option">kris mari</option>
-                        <option class="option">pucan market</option>
-                        <option class="option">market frateli</option>
-                        <option class="option">reptil</option>
-                        <option class="option">cam</option>
-                        <option class="option">ajvar market</option>
-                        <option class="option">rolex market</option>
-                        <option class="option">se lis market</option>
-                        <option class="option">vero</option>
-                        <option class="option">bolero pinguin</option>
-                        <option class="option">bottega del gusto</option>
-                        <option class="option">harbin supermarket</option>
-                        <option class="option">dia market</option>
-                        <option class="option">ramstore</option>
-                        <option class="option">stokomak</option>
-                        <option class="option">dim</option>
-                        <option class="option">deni market</option>
-                        <option class="option">er gros</option>
-                        <option class="option">mercato</option>
-                        <option class="option">kri kri</option>
-                    </select>
-                </li>
-                <li class="separate">
-                    <select>
-                        <option class="option">Market Type</option>
-                        <option class="option">grocery store</option>
-                        <option class="option">farmers' market</option>
-                        <option class="option">market</option>
-                        <option class="option">hypermarket</option>
-                        <option class="option">discount Store</option>
-                        <option class="option">discount supermarket</option>
-                        <option class="option">fruit and vegetables store</option>
-                        <option class="option">supermarket</option>
-                    </select>
-                </li>
-                <li class="separate">
-                    <select>
-                        <option class="option">Municipality</option>
-                        <option class="option">chair</option>
-                        <option class="option">centar</option>
-                        <option class="option">shuto orizari</option>
-                        <option class="option">karposh</option>
-                        <option class="option">budel</option>
-                        <option class="option">gazi baba</option>
-                        <option class="option">aerodrom</option>
-                        <option class="option">kisela voda</option>
-                        <option class="option">gjorche petrov</option>
-                    </select>
-                </li>
-                <li class="separate right">
-                    <select class="right">
-                        <option class="option">Rating</option>
-                        <option class="option">1 stars</option>
-                        <option class="option">2 stars</option>
-                        <option class="option">3 stars</option>
-                        <option class="option">4 stars</option>
-                        <option class="option">5 stars</option>
-                    </select>
-                </li>
-            </ul>
-<!--            <form action="/markTheMarket/findAllMarkets" method="post">-->
+            <form action="/markTheMarket/findAllMarkets" method="post">
+                <ul class="searchBar">
+                    <li class="separate left">
+                        <select class="left" name="name">
+                            <option class="option" name="name" value="Market Name">Market Name</option>
+                            <option class="option" name="name" value="Tinex">Tinex</option>
+                            <option class="option" name="name" value="Old Bazaar">Old Bazaar</option>
+                            <option class="option" name="name" value="Farmers' Market">Farmers' Market</option>
+                            <option class="option" name="name" value="Gama Market">Gama Market</option>
+                            <option class="option" name="name" value="Zur Market">Zur Market</option>
+                            <option class="option" name="name" value="Kipper">Kipper</option>
+                            <option class="option" name="name" value="KAM">KAM</option>
+                            <option class="option" name="name" value="Nova Market">Nova Market</option>
+                            <option class="option" name="name" value="Fresh">Fresh</option>
+                            <option class="option" name="name" value="My Market">My Market</option>
+                            <option class="option" name="name" value="Camerons Market of Goods">Camerons Market of
+                                Goods
+                            </option>
+                            <option class="option" name="name" value="Mel market">Mel market</option>
+                            <option class="option" name="name" value="Damjance Prom Market">Damjance Prom Market
+                            </option>
+                            <option class="option" name="name" value="Dragstor Beti">Dragstor Beti</option>
+                            <option class="option" name="name" value="Marvik">Marvik</option>
+                            <option class="option" name="name" value="Kris Mari">Kris Mari</option>
+                            <option class="option" name="name" value="Pucan Market">Pucan Market</option>
+                            <option class="option" name="name" value="Market Frateli">Market Frateli</option>
+                            <option class="option" name="name" value="Market ToGo">Market ToGo</option>
+                            <option class="option" name="name" value="Reptil">Reptil</option>
+                            <option class="option" name="name" value="CAM">CAM</option>
+                            <option class="option" name="name" value="Ajvar Market">Ajvar Market</option>
+                            <option class="option" name="name" value="Roleks">Roleks</option>
+                            <option class="option" name="name" value="Se lis Market">Se lis Market</option>
+                            <option class="option" name="name" value="Vero">Vero</option>
+                            <option class="option" name="name" value="Bolero Pinguin">Bolero Pinguin</option>
+                            <option class="option" name="name" value="Bottega del Gusto">Bottega del Gusto</option>
+                            <option class="option" name="name" value="Harbin Supermarket">Harbin Supermarket</option>
+                            <option class="option" name="name" value="DIA MARKET">DIA MARKET</option>
+                            <option class="option" name="name" value="Ramstore">Ramstore</option>
+                            <option class="option" name="name" value="Stokomak">Stokomak</option>
+                            <option class="option" name="name" value="Dim">Dim</option>
+                            <option class="option" name="name" value="Deni Market">Deni Market</option>
+                            <option class="option" name="name" value="ER GROS">ER GROS</option>
+                            <option class="option" name="name" value="Mercato">Mercato</option>
+                            <option class="option" name="name" value="Kri kri">Kri kri</option>
+                        </select>
+                    </li>
+                    <li class="separate">
+                        <select name="type">
+                            <option class="option" name="type" value="Market Type">Market Type</option>
+                            <option class="option" name="type" value="Grocery store">Grocery store</option>
+                            <option class="option" name="type" value="Farmers' market">Farmers' market</option>
+                            <option class="option" name="type" value="Market">Market</option>
+                            <option class="option" name="type" value="Hypermarket">Hypermarket</option>
+                            <option class="option" name="type" value="Discount store">Discount store</option>
+                            <option class="option" name="type" value="Discount supermarket">Discount supermarket
+                            </option>
+                            <option class="option" name="type" value="Fruit and vegetable store">Fruit and vegetable
+                                store
+                            </option>
+                            <option class="option" name="type" value="Supermarket">Supermarket</option>
+                        </select>
+                    </li>
+                    <li class="separate">
+                        <select name="municipality">
+                            <option class="option" name="municipality" value="Municipality">Municipality</option>
+                            <option class="option" name="municipality" value="Chair">Chair</option>
+                            <option class="option" name="municipality" value="Centar">Centar</option>
+                            <option class="option" name="municipality" value="Shuto Orizari">Shuto Orizari</option>
+                            <option class="option" name="municipality" value="Karposh">Karposh</option>
+                            <option class="option" name="municipality" value="Butel">Butel</option>
+                            <option class="option" name="municipality" value="Gazi Baba">Gazi Baba</option>
+                            <option class="option" name="municipality" value="Aerodrom">Aerodrom</option>
+                            <option class="option" name="municipality" value="Kisela Voda">Kisela Voda</option>
+                            <option class="option" name="municipality" value="Gjorche Petrov">Gjorche Petrov</option>
+                        </select>
+                    </li>
+                    <li class="separate right">
+                        <select class="right" name="rating">
+                            <option class="option" name="rating" value="Rating">Rating</option>
+                            <option class="option" name="rating" value="1">1 stars</option>
+                            <option class="option" name="rating" value="2">2 stars</option>
+                            <option class="option" name="rating" value="3">3 stars</option>
+                            <option class="option" name="rating" value="4">4 stars</option>
+                            <option class="option" name="rating" value="5">5 stars</option>
+                        </select>
+                    </li>
+                </ul>
                 <div class="searchIcon">
                     <button id="searchButton"><i style="font-size:24px" class="fa">&#xf002;</i></button>
                 </div>
-<!--            </form>-->
+            </form>
         </div>
     </div>
     <div class="imgWrapper">
         <div class="intro">
             <h2>Mark your market...</h2>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda distinctio eaque eius eveniet hic magni nulla numquam obcaecati officiis, optio quo rerum similique sit sunt, suscipit tempora tenetur, voluptas.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda distinctio eaque eius eveniet
+            hic magni nulla numquam obcaecati officiis, optio quo rerum similique sit sunt, suscipit tempora tenetur,
+            voluptas.
         </div>
     </div>
 </div>
@@ -129,39 +138,35 @@
 
 <div class="resultSection">
     <div class="generatedResult">
-        <a id="result"></a>
         <div class="row">
             <div class="separateResult inRow">Market Name</div>
             <div class="separateResult inRow">Market Type</div>
             <div class="separateResult inRow">Market Address</div>
-            <div class="separateResult inRow lastInRow">Municipality</div>
-            <div class="separateResult button"></div>
-            <div class="separateResult button">Information</div>
-            <div class="separateResult button"></div>
+            <div class="separateResult inRow">Municipality</div>
+            <div class="separateResult inRow">Location</div>
+            <div class="separateResult">Information</div>
         </div>
-        <div class="row">   <!--th:each="market : ${markets}"-->
-            <div class="separateResult inRow">Tinex</div> <!--th:text="${market.getName()}"-->
-            <div class="separateResult inRow">Hypermarket</div>
-            <div class="separateResult inRow">ul. Nikola Parapunov br.3-83</div>
-            <div class="separateResult inRow lastInRow">Aerodrom</div>
-            <div class="separateResult button">
-                <button class="tableButton"><i class="material-icons" style="font-size: 30px">&#xe0c8;</i></button>
+        <div class="row" th:each="market : ${filteredMarkets}">
+            <div class="separateResult inRow" th:text="${market.name}">Tinex</div>
+            <div class="separateResult inRow" th:text="${market.type}">Hypermarket</div>
+            <div class="separateResult inRow" th:text="${market.address}">ul. Nikola Parapunov br.3-83</div>
+            <div class="separateResult inRow" th:text="${market.municipality}">Aerodrom</div>
+            <div class="separateResult">
+                <a target="_blank" th:href="${market.locationLink}" class="tableButton"><i class="material-icons"
+                                                                                           style="font-size: 30px">&#xe0c8;</i></a>
             </div>
             <div class="separateResult button">
-                <button class="tableButton" id="hoursButton"><i class="fa">&#xf1da;</i></button>
-                <div id="dialog1">
-                    <div class="dialogTitle">Working hours:</div>
-                    <label>Monday:<br> <span>08:00h - 16:00h</span></label>
-                </div>
-            </div>
-            <div class="separateResult button">
-                <button class="tableButton" id="infoButton"><i class="fa">&#xf05a;</i></button>
-                <div id="dialog2">
-                    <div class="dialogTitle">Additional info:</div>
-                    <label>website:<br> <span>www.website.com.mk</span></label>
-                    <label>number:<br> <span>078555555</span></label>
-                    <label>rating:<br> <span>5 star</span></label>
-                    <label>reviews:<br> <span>80</span><br></label>
+                <button class="tableButton" th:id="infoButton"><i class="fa">&#xf05a;</i></button>
+                <div class="side" style="display: none">
+                    <span class="additionalInfoTitle">ADDITIONAL INFO:</span> <br>
+                    <label><span class="additionalInfoTitle">working hours: </span> <span
+                            th:text="${market.hours}"></span></label><br>
+                    <label><span class="additionalInfoTitle">website: </span> <span th:text="${market.website}"></span></label><br>
+                    <label><span class="additionalInfoTitle">number: </span> <span
+                            th:text="${market.number}"></span></label> <br>
+                    <label><span class="additionalInfoTitle">rating: </span> <span th:text="${market.rating}"></span>
+                        <span class="additionalInfoTitle">reviews: </span> <span th:text="${market.reviews}"></span><br></label>
+                    <br>
                 </div>
             </div>
         </div>
