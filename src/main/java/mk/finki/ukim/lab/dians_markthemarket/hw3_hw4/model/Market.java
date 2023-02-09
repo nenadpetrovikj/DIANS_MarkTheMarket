@@ -1,4 +1,4 @@
-package mk.finki.ukim.lab.dians_markthemarket.hw3.model;
+package mk.finki.ukim.lab.dians_markthemarket.hw3_hw4.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
