@@ -9,11 +9,12 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>mk.finki.ukim.lab</groupId>
-    <artifactId>DIANS_MarkTheMarket</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <artifactId>dians_markthemarket</artifactId>
+    <version>0.0.2-SNAPSHOT</version>
     <name>DIANS_MarkTheMarket</name>
     <description>DIANS_MarkTheMarket</description>
     <properties>
+        <containerRegistry>markthemarketcontainerregistry.azurecr.io</containerRegistry>
         <java.version>17</java.version>
     </properties>
     <dependencies>
@@ -31,8 +32,8 @@
         </dependency>
 
         <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
         </dependency>
 
         <dependency>
@@ -58,6 +59,9 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
+                    <image>
+                        <name>${containerRegistry}/${project.artifactId}:${project.version}</name>
+                    </image>
                     <excludes>
                         <exclude>
                             <groupId>org.projectlombok</groupId>

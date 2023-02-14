@@ -4,9 +4,10 @@ import jakarta.annotation.PostConstruct;
 import mk.finki.ukim.lab.dians_markthemarket.hw3_hw4.model.Market;
 import mk.finki.ukim.lab.dians_markthemarket.hw3_hw4.repository.MarketRepository;
 import org.springframework.stereotype.Component;
+import org.springframework.util.ResourceUtils;
 
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
+import java.util.Objects;
 import java.util.Scanner;
 
 @Component
@@ -21,7 +22,9 @@ public class MarkTheMarketInitDatabaseInitialization {
 
     @PostConstruct
     public void createFinal() throws FileNotFoundException {
-        Scanner scanner = new Scanner(new File("src/main/java/mk/finki/ukim/lab/dians_markthemarket/hw1/csv/MarketiTableFinal.csv"));
+        File file = ResourceUtils.getFile("classpath:data/MarketiTableFinal.csv");
+        InputStream in = new FileInputStream(file);
+        Scanner scanner = new Scanner(in);
         while (scanner.hasNextLine()) {
             String[] line = scanner.nextLine().split(",(?=([^\"]*\"[^\"]*\")*[^\"]*$)");
             if (!isFirstRow) {
